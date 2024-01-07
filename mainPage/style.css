@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 600px;
-    /* Уменьшенная высота шапки */
+
     overflow: hidden;
   }
 
@@ -17,7 +17,6 @@
     z-index: -100;
     transform: translate(-50%, -50%);
     filter: blur(3px);
-    /* Блюр для видео */
   }
 
   .video-overlay {
@@ -27,7 +26,6 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-    /* Затемнение на 70% */
     z-index: -50;
   }
 
@@ -63,7 +61,6 @@
 
   .navbar-collapse {
     justify-content: flex-end;
-    /* Выравнивание кнопок навигации по правому краю */
   }
 
    .footer {
