@@ -12,57 +12,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
 <body>
     <header class="video-background">
         <video loop muted autoplay>
-          <source
-            src="https://ak.picdn.net/shutterstock/videos/1011797714/preview/stock-footage-binary-code-black-and-green-background-with-digits-moving-on-screen-concept-of-digital-age.mp4"
-            type="video/mp4" loop autoplay muted>
+            <source
+                src="https://ak.picdn.net/shutterstock/videos/1011797714/preview/stock-footage-binary-code-black-and-green-background-with-digits-moving-on-screen-concept-of-digital-age.mp4"
+                type="video/mp4" loop autoplay muted>
         </video>
-    
+
         <div class="video-overlay"></div>
         </div>
         <div class="container header-content">
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html">Best site ever</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="aboutPage/index.html">О нас</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="FAQpage/index.html">FAQ</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="contactsPage/index.html">Контакты</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="/blogPage/index.html">Блог</a>
-                </li>
-              </ul>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="index.html">Best site ever</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../aboutPage/index.html">О нас</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../FAQpage/index.html">FAQ</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../contactsPage/index.html">Контакты</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../blogPage/index.html">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="row align-items-center" style="height: 500px;">
+                <div class="col-md-6">
+                    <h1 class="display-4">Разработка игр на best game engine ever</h1>
+                    <p class="lead">Быстрая и качественная работа</p>
+                    <a class="btn btn-outline-light btn-lg" href="#" role="button">Тарифы</a>
+                </div>
+                <div class="col-md-6 achievements">
+                    <div class="achievement">Миллиарды триллионов заказов</div>
+                    <div class="achievement">отзывы 6 звезд из 5</div>
+                    <div class="achievement">разморозка любого проекта</div>
+                </div>
             </div>
-          </nav>
-    
-          <div class="row align-items-center" style="height: 500px;">
-            <div class="col-md-6">
-              <h1 class="display-4">Разработка игр на best game engine ever</h1>
-              <p class="lead">Быстрая и качественная работа</p>
-              <a class="btn btn-outline-light btn-lg" href="#" role="button">Тарифы</a>
-            </div>
-            <div class="col-md-6 achievements">
-              <div class="achievement">Миллиарды триллионов заказов</div>
-              <div class="achievement">отзывы 6 звезд из 5</div>
-              <div class="achievement">разморозка любого проекта</div>
-            </div>
-          </div>
         </div>
-      </header>
+    </header>
 
     <div class="container text-center py-5">
         <h2>Основной контент страницы</h2>
@@ -131,26 +133,60 @@
         </div>
     </div>
 
-    <footer class="footer fixed-bottom bg-dark">
-        <hr class="mb-1" />
-        <section class="mb-2 text-center">
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/llyqq134">llyqq134
-                <i class="bi bi-github"></i>
-            </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Подать заявку на разработку или доделывание вашей игры</h2>
+                    <p>Если вам нужна помощь - мы вам поможем!</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i>8 800 555 35 35</p>
+                        <p><i class="fas fa-envelope"></i>besteverengine@gmail.com.ru</p>
+                    </div>
+                </div>
+                <div class="col-md-6 contact-form">
+                    <form class="formcarryForm" action="https://formcarry.com/s/wEDhUihCBK"
+                        enctype="multipart/form-data">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" placeholder="Имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="phone" name="phone-number" class="form-control" placeholder="Телефон">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="3" placeholder="Сообщение"></textarea>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" name="checkbox" class="form-check-input" id="dataConsentCheck">
+                            <label class="form-check-label" for="dataConsentCheck">Согласен на обработку данных</label>
+                        </div>
+                        <button disabled type="submit" class="btn btn-primary button">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="copyright">
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/llyqq134">llyqq134
+                            <i class="bi bi-github"></i>
+                        </a>
 
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/rngblessed"
-                role="button">rngblessed
-                <i class="bi bi-github"></i>
-            </a>
-        </section>
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/rngblessed"
+                            role="button">rngblessed
+                            <i class="bi bi-github"></i>
+                        </a>
 
-        <div class="text-center p-2 bg-dark text-white">
-            © 2024 Copyright
-        </div>
+                        <p>Copyright 2024</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
