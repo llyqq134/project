@@ -26,7 +26,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   /* Затемнение на 70% */
   z-index: -50;
 }
@@ -116,5 +116,34 @@ li:before {
 .footer .copyright {
   margin-top: 20px;
   font-size: 0.8em;
-  color: #666;
+  color: #665;
+}
+
+.advantage-col {
+  margin-bottom: 20px;
+}
+
+.advantage-wrapper {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.advantage-wrapper:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.advantage-icon {
+  margin-bottom: 10px;
+}
+
+.advantage-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.advantage-body {
+  color: #333;
 }
