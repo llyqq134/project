@@ -4,102 +4,105 @@
     height: 600px;
 
     overflow: hidden;
-  }
+}
 
-  .video-background video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translate(-50%, -50%);
-    filter: blur(3px);
-  }
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+  filter: blur(3px);
+  /* Блюр для видео */
+}
 
-  .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: -50;
-  }
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  /* Затемнение на 70% */
+  z-index: -50;
+}
 
-  .header-content {
-    position: relative;
-    z-index: 100;
-    color: white;
-  }
+.header-content {
+  position: relative;
+  z-index: 100;
+  color: white;
+}
 
-  .navbar {
-    background-color: transparent;
-    border: 0;
-  }
+.navbar {
+  background-color: transparent;
+  border: 0;
+}
 
-  .achievements {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.achievements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-  .achievement {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+.achievement {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 
-  .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: none;
-  }
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+}
 
-  .navbar-collapse {
-    justify-content: flex-end;
-  }
+.navbar-collapse {
+  justify-content: flex-end;
+  /* Выравнивание кнопок навигации по правому краю */
+}
 
-   .footer {
-      background-color: #000;
-      color: white;
-      padding: 40px 0;
-    }
+.footer {
+  background-color: #000;
+  color: white;
+  padding: 40px 0;
+}
 
-    .footer h2 {
-      margin-bottom: 20px;
-    }
+.footer h2 {
+  margin-bottom: 20px;
+}
 
-    .footer .contact-form {
-      background-color: #333;
-      padding: 20px;
-      border-radius: 5px;
-    }
+.footer .contact-form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 5px;
+}
 
-    .footer .contact-form .form-control {
-      background-color: #222;
-      border: none;
-      margin-bottom: 15px;
-    }
+.footer .contact-form .form-control {
+  background-color: #222;
+  border: none;
+  margin-bottom: 15px;
+}
 
-    .footer .contact-form .btn {
-      background-color: #18ac04;
-      border: none;
-    }
+.footer .contact-form .btn {
+  background-color: #18ac04;
+  border: none;
+}
 
-    .footer .contact-info {
-      margin-bottom: 20px;
-    }
+.footer .contact-info {
+  margin-bottom: 20px;
+}
 
-    .footer .contact-info i {
-      margin-right: 10px;
-    }
+.footer .contact-info i {
+  margin-right: 10px;
+}
 
-    .footer .copyright {
-      margin-top: 20px;
-      font-size: 0.8em;
-      color: #666;
-    }
+.footer .copyright {
+  margin-top: 20px;
+  font-size: 0.8em;
+  color: #666;
+}
