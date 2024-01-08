@@ -3,38 +3,39 @@ $('input[name="checkbox"]').on("change", function (e) {
   else $(".button").attr("disabled", true);
 });
 
-
-$(document).ready(function() {
-  $('.formcarryForm').submit(function(event) {
+$(document).ready(function () {
+  $(".formcarryForm").submit(function (event) {
     event.preventDefault();
     var href = $(this).attr("action");
     const data = new FormData(this);
 
-    try {
-      for (value of data.values()) {
-        if (value == "") throw new Error("field validtaion error");
+    for (let value of data.values()) {
+      if (value === "") {
+        alert("Не все данные заполнены");
+        return;
       }
-    } catch (error) {
-      alert("Не все данные заполнены");
-      console.log(error);
-      return;
     }
 
-    $.ajax({
-      type: "POST", 
-      url: href, 
-      data: data, 
-      contentType: false, 
-      processData: false, 
+    fetch(href, {
+      method: "POST",
+      body: data,
       headers: {
-        'Accept': 'text/html'
+        'Accept': 'application/json'
       },
-      success: function(response) {
-        alert('Форма успешно отправлена');
-      },
-      error: function(error) {
-        alert('Произошла ошибка при отправке формы\nно мы разберемся!');
+    })
+    .then(response => {
+      if (response.ok) {
+        return response.json(); 
       }
+      throw new Error('Network response was not ok.');
+    })
+    .then(json => {
+      console.log("Успех:", json);
+      alert('Форма успешно отправлена');
+    })
+    .catch(error => {
+      console.error("Ошибка:", error);
+      alert('Произошла ошибка при отправке формы');
     });
   });
 });
