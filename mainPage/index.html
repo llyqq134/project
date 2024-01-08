@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
 
@@ -55,7 +55,7 @@
                 <div class="col-md-6">
                     <h1 class="display-4">Разработка игр на best game engine ever</h1>
                     <p class="lead">Быстрая и качественная работа</p>
-                    <a class="btn btn-outline-light btn-lg" href="../plansPage/index.html" role="button">Тарифы</a>
+                    <a class="btn btn-outline-light btn-lg" onclick=insertPlans() role="button">Тарифы</a>
                 </div>
                 <div class="col-md-6 achievements">
                     <div class="achievement">Миллиарды триллионов заказов</div>
@@ -95,7 +95,73 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="card-group justify-content-center d-none" id="plans">
+        <div class="card col-sm-12 col-md-2">
+            <div class="card-body text-left">
+                <h5 class="card-title">Стандарт</h5>
+                <ul class="list-styled">
+                    <p></p>
+                    <li>Ежедневная оплата</li>
+                    <p></p>
+                    <li>Полная поддержка кода</li>
+                    <p></p>
+
+                    <li>Связь 25/8</li>
+
+                    <p></p>
+
+                    <li>Быстрая работа</li>
+
+                    <p></p>
+
+                </ul>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-outline-danger">Оставить заявку</a>
+            </div>
+        </div>
+        <div class="card col-sm-12 col-md-2">
+            <div class="card-body text-left">
+                <h5 class="card-title">Расширенный</h5>
+                <ul class="list-styled">
+                    <p></p>
+                    <li>Почасовая оплата</li>
+                    <p></p>
+                    <li>Частичная поддержка кода</li>
+                    <p></p>
+                    <li>Связь 24/7</li>
+                    <p></p>
+                    <li>Работа в порядке очереди</li>
+                    <p></p>
+                </ul>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-outline-danger">Оставить заявку</a>
+            </div>
+        </div>
+        <div class="card col-sm-12 col-md-2">
+            <div class="card-body text-left">
+                <h5 class="card-title">Ультима</h5>
+                <ul class="list-styled">
+                    <p></p>
+                    <li>Оплата за строчку кода (количество enter неограничено)</li>
+                    <p></p>
+                    <li>Только быстрая работа</li>
+                    <p></p>
+                    <li>Вы даете таск и получаете ответ</li>
+                    <p></p>
+                    <li>Обслуживание как в почте России</li>
+                    <p></p>
+                </ul>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-outline-danger">Оставить заявку</a>
+            </div>
+        </div>
+    </div>
+
+
     <footer class="footer">
         <div class="container">
             <div class="row">
