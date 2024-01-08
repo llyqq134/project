@@ -38,3 +38,9 @@ $(document).ready(function() {
     });
   });
 });
+
+document.querySelector("button").onclick = insertPlans;
+
+function insertPlans() {
+  document.getElementById("plans").classList.remove("d-none");
+}
