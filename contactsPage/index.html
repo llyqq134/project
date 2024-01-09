@@ -1,41 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contactsPage</title>
+    <title>Contacts</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 </head>
+
 <body>
-    <header class="navbar navbar-expand-lg bg-dark bg-gradient">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529;">
         <div class="container">
-            <a class="navbar-brand text-white" href="../index.html">Best site ever</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <a class="link-offset-2 link-underline link-underline-opacity-0" href="../aboutPage/index.html"><li class="nav-item text-white p-2">О нас</li></a>
-                <a class="link-offset-2 link-underline link-underline-opacity-0" href="../FAQpage/index.html"><li class="nav-item text-white p-2">FAQ</li></a>
-                <a class="link-offset-2 link-underline link-underline-opacity-0" href="../contactsPage/index.html"><li class="nav-item text-white p-2">Контакты</li></a>
-                <a class="link-offset-2 link-underline link-underline-opacity-0" href="../blogPage/index.html"><li class="nav-item text-white p-2">Блог</li></a>
-            </ul>
+            <a class="navbar-brand" href="../index.html">Best engine ever</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../aboutPage/index.html">О нас</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../FAQpage/index.html">FAQ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" style="border-bottom: 1px solid white;" href="../contactsPage/index.html">Контакты</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Котики
+                        </a>
+                        <div class="dropdown-menu" style="padding-bottom: 0; padding-top: 0;"
+                            aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item active" style="background-color: #212529"
+                                href="../assets/screamCat.jpg">Кричащий котик</a>
+                            <a class="dropdown-item active" style="background-color: #212529"
+                                href="../assets/shyCat.jpg">Застенчивый котик</a>
+                            <a class="dropdown-item active" style="background-color: #212529"
+                                href="../assets/coolCat.jpg">Крутой котик</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
+    </nav>
+    
 
-    <footer class="footer bg-dark bg-gradient">
-        <hr class="mb-4"/>
-        <section class="mb-4 text-center">    
-            <!-- Github -->
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/llyqq134">llyqq134
-                <i class="bi bi-github"></i>
-            </a>
 
-            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/rngblessed" role="button">rngblessed
-                <i class="bi bi-github"></i>
-            </a>
-          </section>
-          <!-- Section: Social media -->
+    <footer class="footer" style="background-color: #212529;">
+        <div class="container text-center">
+            <hr class="mb-4" />
+            <section class="text-center">
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/llyqq134">llyqq134
+                    <i class="bi bi-github"></i>
+                </a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/rngblessed"
+                    role="button">rngblessed
+                    <i class="bi bi-github"></i>
+                </a>
+            </section>
+            <p style="color: white; padding-left: 5px">Copyright 2024</p>
         </div>
     </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
+</html>
+
 </html>
