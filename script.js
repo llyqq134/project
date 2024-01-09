@@ -63,3 +63,40 @@ document.querySelector("button").onclick = insertPlans;
 function insertPlans() {
   document.getElementById("plans").classList.remove("d-none");
 }
+
+// недоделанный histotyAPI
+// const contentElement = document.getElementById("content");  
+
+// const pages = { 
+//     home: { content: "Home Page", url: "#home"},      
+//     about: { content: "About Page", url: "#about"  },
+//     contacts: { content: "Contact Page", url: "#contacts"}   
+// };  
+
+// function handleClick(event){
+//     const url = event.target.getAttribute("href");
+//     const pageName = url.split("#").pop();
+//     const page = pages[pageName];
+//     if(history.state.url != url) {
+//         contentElement.textContent = page.content;   
+//         history.pushState(page,     
+//             event.target.textContent,     
+//             event.target.href        
+//         );
+//         document.title = event.target.textContent;
+//     }
+//     return event.preventDefault();  
+// }  
+
+// window.addEventListener("popstate", (event) => { 
+//     if(event.state)
+//         contentElement.textContent = event.state.content;
+// });
+
+// const links = document.getElementsByTagName("a"); 
+// for (let i = 0; i < links.length; i++) {
+//     links[i].addEventListener("click", handleClick, true);  
+// } 
+
+// contentElement.textContent = pages.home.content;  
+// history.pushState(pages.home, "Home", pages.home.url);
