@@ -79,3 +79,13 @@ body {
 ul li {
     padding-right: 10px;
 }
+
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 450px {
+    img {
+        width: 100vw;
+    }
+}
