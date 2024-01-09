@@ -120,6 +120,7 @@ li:before {
 
 .footer .contact-form .form-control {
   background-color: #222;
+  color: white;
   border: none;
   margin-bottom: 15px;
 }
@@ -128,7 +129,6 @@ li:before {
   background-color: #18ac04;
   border: none;
 }
-
 .footer .contact-info {
   margin-bottom: 20px;
 }
