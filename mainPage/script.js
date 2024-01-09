@@ -8,7 +8,7 @@ $(document).ready(function () {
     event.preventDefault();
     var href = $(this).attr("action");
     const data = new FormData(this);
-
+    
     for (let value of data.values()) {
       if (value === "") {
         alert("Не все данные заполнены");
